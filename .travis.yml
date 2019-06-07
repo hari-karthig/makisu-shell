@@ -1,0 +1,10 @@
+dist: trusty
+
+jobs:
+  include:
+    - stage: build
+      script:
+      - git clone https://github.com/hari-karthig/makisu-shell.git 
+      - cd makisu-shell
+      - docker build -t harikarthi/makisu-shell:latest .
+      - docker images
