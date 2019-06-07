@@ -17,6 +17,7 @@ pipeline {
                 container("makisu"){
                     sh """
                         /makisu-internal/makisu build \
+                        --modifyfs=true \
                         --push=$registry \
                         --registry-config=$credentials \
                         -t=$image:$tag \
