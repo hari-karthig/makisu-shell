@@ -1,6 +1,6 @@
 registry="index.docker.io"
 credentials="/registry-config/registry.yaml"
-image="harikarthi/hello-makisu"
+image="harikarthi/makisu-sh"
 tag="latest"
 
 pipeline {
