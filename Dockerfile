@@ -11,7 +11,7 @@ ADD bin ./bin
 ADD lib ./lib
 RUN make lbins
 
-FROM alpine
+FROM alpine:3.6
 COPY --from=builder /workspace/github.com/uber/makisu/bin/makisu/makisu.linux /makisu-internal/makisu
 ADD ./assets/cacerts.pem /makisu-internal/certs/cacerts.pem
 
