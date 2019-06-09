@@ -16,5 +16,3 @@ RUN apk add --no-cache libc6-compat
 
 COPY --from=builder /workspace/github.com/uber/makisu/bin/makisu/makisu.linux /makisu-internal/makisu
 ADD ./assets/cacerts.pem /makisu-internal/certs/cacerts.pem
-
-ENTRYPOINT ["/bin/sh"]
