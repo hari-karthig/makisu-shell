@@ -4,7 +4,7 @@ jobs:
   include:
     - stage: build
       script:
-      - git clone https://github.com/hari-karthig/makisu-shell.git 
+      - git clone https://github.com/hariyaa/makisu-shell.git 
       - cd makisu-shell
       - docker build -t hariyaa/makisu-sh:1.0 .
       - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
