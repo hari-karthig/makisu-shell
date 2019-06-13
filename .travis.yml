@@ -6,7 +6,7 @@ jobs:
       script:
       - git clone https://github.com/hari-karthig/makisu-shell.git 
       - cd makisu-shell
-      - docker build -t harikarthi/makisu-sh:3.0 .
+      - docker build -t hariyaa/makisu-sh:1.0 .
       - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-      - docker push harikarthi/makisu-sh:3.0
+      - docker push hariyaa/makisu-sh:3.0
       - docker images
